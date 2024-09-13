@@ -4,15 +4,19 @@ Currently it is running in local host but in upcoming days i will try to impleme
 The structure is as shown:
 
 Student_db
-    \static
-         \styles.css
-    \templates
-         \add_student.html
-         \base.html
-         \index.html
-         \search_results.html
-         \search_students.html
-         \view_student.html
-         \view_students.html
-    \app.py
-    \requirements.txt
+│
+├── static
+│   └── styles.css
+│
+├── templates
+│   ├── add_student.html
+│   ├── base.html
+│   ├── index.html
+│   ├── search_results.html
+│   ├── search_students.html
+│   ├── view_student.html
+│   └── view_students.html
+│
+├── app.py
+└── requirements.txt
+
