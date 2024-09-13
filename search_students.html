@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Students{% endblock %}
+
+{% block content %}
+    <h1>Search Students by Department</h1>
+    <form method="POST" action="{{ url_for('search_students') }}">
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required>
+        <input type="submit" value="Search">
+    </form>
+{% endblock %}

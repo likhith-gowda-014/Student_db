@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Student{% endblock %}
+
+{% block content %}
+    <h1>Add Student</h1>
+    <form method="POST" action="{{ url_for('add_student') }}">
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="usn" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+
+        <label for="sem">Semester:</label>
+        <input type="number" id="sem" name="sem" required><br><br>
+
+        <label for="cgpa">CGPA:</label>
+        <input type="text" id="cgpa" name="cgpa" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}

@@ -1,0 +1,60 @@
+/* Example CSS styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* static/css/styles.css */
+
+/* Center align the container and add a border */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center align content */
+    border: 1px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Optional: Center align headings */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+/* Optional: Style for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Students List{% endblock %}
+
+{% block content %}
+    <h1>Welcome to College Management System</h1>
+    <p>Here you can manage students and their details.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>USN</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Date of Birth</th>
+                <th>Semester</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{ student.usn }}</td>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.department }}</td>
+                    <td>{{ student.date_of_birth }}</td>
+                    <td>{{ student.sem }}</td>
+                    <td>{{ student.cgpa }}</td>
+                    <td>
+                        <a href="{{ url_for('view_student', student_id=student.id) }}">View Details</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <a href="{{ url_for('add_student') }}">Add New Student</a>
+    <a href="{{ url_for('view_students') }}">View All Students</a>
+    <a href="{{ url_for('search_students') }}">Search Students by Department</a>
+{% endblock %}
